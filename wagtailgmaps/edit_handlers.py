@@ -76,7 +76,7 @@ class BaseMapFieldPanel(BaseCompositeEditHandler):
 
 
 class MapFieldPanel(object):
-    def __init__(self, fieldname, heading='Location', classname='', latlng=False, centre='', zoom=8):
+    def __init__(self, fieldname, heading='Location', classname='', latlng=False, centre='', zoom=None):
         self.children = [
             FieldPanel(fieldname),
         ]
